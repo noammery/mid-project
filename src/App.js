@@ -16,6 +16,7 @@ function App() {
       <North />
       <South />
       <Center />
+      <EventList></EventList>
     </div>
   );
 }
