@@ -1,0 +1,24 @@
+.HomeHeader {
+  font-style: italic;
+  font-size: x-large;
+  background-color: #013a6b;
+  background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.HomeHeader h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.non {
+  font-weight: 900;
+  font-size: 4vw;
+  margin-right: 5vw;
+}
+.volunteer {
+  font-size: 3vw;
+  margin-left: 10vw;
+}

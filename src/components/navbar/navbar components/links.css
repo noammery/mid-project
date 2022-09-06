@@ -1,0 +1,83 @@
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.links.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: none;
+}
+.links.bottom {
+  border: none;
+}
+.links.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: none;
+}
+a.navbarlinks {
+  text-decoration: none;
+  padding: 3px;
+  font-weight: bolder;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 50%;
+}
+a.navbarlinks:active {
+  color: white;
+}
+a.navbarlinks:visited {
+  color: white;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.blue.hover-underline-animation:after {
+  background-color: white !important;
+}
+.grey.hover-underline-animation:after {
+  background-color: white !important;
+}
+a.grey.hover-underline-animation {
+  color: black;
+}
+.coolGreen.hover-underline-animation:after {
+  background-color: green !important;
+}
+a.coolGreen.hover-underline-animation {
+  color: black;
+}
+.white.hover-underline-animation:after {
+  background-color: red !important;
+}
+.deepPurple.hover-underline-animation:after {
+  background-color: white;
+}
+a.white.hover-underline-animation {
+  color: black;
+}
