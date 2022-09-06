@@ -79,7 +79,7 @@ export default function Form() {
                     {errors?.adress && <p>{errors?.adress?.message || "Error!"}</p>}
                 </div>
 
-                <input type="submit" disabled={!isValid} />
+                <input value="SUBMIT" type="submit" disabled={!isValid} />
             </form>
         </div>
     )
