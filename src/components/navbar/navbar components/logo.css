@@ -1,0 +1,105 @@
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logoImg {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: 1s;
+}
+.logoImg:hover {
+  scale: 1.2;
+  transform: rotateY(360deg);
+}
+.title {
+  color: red;
+}
+.blue {
+  color: white;
+}
+.grey {
+  color: black;
+}
+.white.title {
+  text-decoration: black dotted underline;
+}
+.title.box.red {
+  padding: 3px;
+  text-decoration: none;
+  border: 2px white solid;
+}
+.title.box.blue {
+  padding: 3px;
+  text-decoration: none;
+  border: 2px white solid;
+}
+.title.box.white {
+  padding: 3px;
+  text-decoration: none;
+  border: 2px red solid;
+}
+.title.box.coolGreen {
+  padding: 3px;
+  text-decoration: none;
+  border: 2px black solid;
+}
+.title.box.grey {
+  padding: 3px;
+  text-decoration: none;
+  border: 2px black solid;
+}
+.title.box.deepPurple {
+  padding: 3px;
+  text-decoration: none;
+  border: 2px white solid;
+}
+.title.box.maldives {
+  padding: 3px;
+  text-decoration: none;
+  border: 2px red solid;
+}
+.title.dotted.red {
+  text-decoration: dotted white underline;
+}
+.title.dotted.blue {
+  text-decoration: dotted black underline;
+}
+.title.dotted.white {
+  text-decoration: dotted red underline;
+}
+.title.dotted.coolGreen {
+  text-decoration: dotted black underline;
+}
+.title.dotted.grey {
+  text-decoration: dotted white underline;
+}
+.title.dotted.deepPurple {
+  text-decoration: dotted white underline;
+}
+.title.dotted.maldives {
+  text-decoration: dotted red underline;
+}
+.title.solid.red {
+  text-decoration: solid white underline;
+}
+.title.solid.blue {
+  text-decoration: solid black underline;
+}
+.title.solid.white {
+  text-decoration: solid red underline;
+}
+.title.solid.coolGreen {
+  text-decoration: solid black underline;
+}
+.title.solid.grey {
+  text-decoration: solid white underline;
+}
+.title.solid.deepPurple {
+  text-decoration: solid white underline;
+}
+.title.solid.maldives {
+  text-decoration: solid red underline;
+}

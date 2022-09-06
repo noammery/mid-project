@@ -1,0 +1,128 @@
+.hamburgerdiv {
+  z-index: 3;
+  width: 13%;
+  height: 88%;
+  background-color: rgba(11, 11, 28);
+  position: fixed;
+  right: 0%;
+  margin-top: 0.85%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@keyframes open1 {
+  from {
+    width: 0%;
+    height: 88%;
+  }
+  to {
+    width: 13%;
+    height: 88%;
+  }
+}
+
+.hamburgerdiv.bottom {
+  margin-bottom: 5.8%;
+}
+.hamburgerdiv.left {
+  max-height: 30vh;
+  border-left: 0 !important;
+  border-top: black 1px solid;
+  left: 13%;
+  bottom: 0vw;
+}
+.hamburgerdiv.right {
+  max-height: 30vh;
+  border-right: 0 !important;
+  border-top: black 1px solid;
+  right: 13%;
+  bottom: 0vw;
+}
+.hamburgerdiv.true {
+  animation: open1 0.5s;
+}
+.hamburgerdiv.false {
+  display: none;
+}
+.hamburgerdiv.false.false {
+  display: none;
+}
+
+.dots {
+  color: red;
+  cursor: pointer;
+  margin: 0;
+  transition: 1s;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+.dots:hover {
+  transform: rotateY(360deg);
+}
+.dots.coolGreen {
+  color: green;
+}
+.dots.grey {
+  color: black;
+}
+.dots.blue {
+  color: black;
+}
+.dots.maldives {
+  color: black;
+}
+.dots.deepPurple {
+  color: white;
+}
+.dots.white {
+  color: red;
+}
+.dots:hover {
+  scale: 1.2;
+}
+.blue.hamburgerdiv {
+  background-color: blue;
+  color: black;
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+}
+.red.hamburgerdiv {
+  border-bottom: 2px red solid;
+  border-left: 2px red solid;
+}
+.white.hamburgerdiv {
+  background-color: white;
+  border-bottom: 2px red solid;
+  border-left: 2px red solid;
+}
+.coolGreen.hamburgerdiv {
+  background-color: white;
+  color: greenyellow;
+}
+.grey.hamburgerdiv {
+  background-color: grey;
+  color: black;
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+}
+.deepPurple.hamburgerdiv {
+  background: -webkit-linear-gradient(to right, #7303c0, #03001e);
+  background: linear-gradient(to right, #7303c0, #141036);
+  color: white;
+  border-bottom: 2px red solid;
+  border-left: 2px red solid;
+}
+.coolGreen.hamburgerdiv {
+  background: linear-gradient(to right, rgb(114, 254, 147), #43c6ac);
+  color: white;
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+}
+.maldives.hamburgerdiv {
+  background: linear-gradient(to right, #84d9ea, #b2fefa);
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+}
