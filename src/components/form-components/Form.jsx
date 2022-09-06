@@ -29,7 +29,7 @@ export default function Form() {
     }
 
     return (
-        <>
+        <div className='Form'>
             <h1>Donation Form</h1>
             <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
                 <div className='input-small'>
@@ -81,6 +81,6 @@ export default function Form() {
 
                 <input type="submit" disabled={!isValid} />
             </form>
-        </>
+        </div>
     )
 }
