@@ -1,0 +1,43 @@
+.About {
+  margin: 5%;
+  height: min-content;
+  width: 40vw;
+  padding: 2%;
+  border: black solid 2px;
+  transition: 0.4s;
+  box-shadow: 1px 1px 1px #013a6b;
+  background: white;
+  border-radius: 25px;
+}
+.aboutandnav {
+  background-image: -webkit-linear-gradient(30deg, #76adde 50%, #ffffff 50%);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.About:hover {
+  scale: 1.01;
+  box-shadow: 4px 4px 3px #013a6b;
+}
+.About h1 {
+  font-style: italic;
+  text-align: center;
+  font-size: 3vw;
+  text-decoration: #013a6b underline solid;
+}
+.About.true {
+  animation: aboutEntrence 3s;
+}
+.About p {
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+@keyframes aboutEntrence {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
