@@ -48,3 +48,25 @@
   scale: 1.03;
   box-shadow: 3px 3px 3px #013a6b;
 }
+@media only screen and (max-width: 768px) {
+  .aboutandnav {
+    flex-direction: column;
+  }
+  .About h1 {
+    font-size: 8vw;
+  }
+  .About h2 {
+    font-size: 8vw;
+  }
+  .About p {
+    font-size: 5vw;
+  }
+  .About {
+    width: 90%;
+  }
+  .aboutandnav > .aboutImg {
+    height: 85vh;
+    width: 90vw;
+    margin-left: 0;
+  }
+}

@@ -1,7 +1,7 @@
 import Links from "./navbar components/Links";
 import Logo from "./navbar components/Logo";
 import Search from "./navbar components/Search";
-// import Hamburger from "./navbar components/Hamburger";
+import Hamburger from "./navbar components/Hamburger";
 import "./navbar.css";
 function Navbar() {
   const titledecoration = "solid";
@@ -11,7 +11,7 @@ function Navbar() {
   const logoPosition = "first";
   const linksPosition = "second";
   const searchPosition = "third";
-  // const hamburgerPosition = "forth";
+  const hamburgerPosition = "forth";
   // pick the position for each element : first/middle/last
   const navbarPosition = "top";
   // Pick the position of the NAVBAR (top/bottom/right/left)
@@ -44,21 +44,20 @@ function Navbar() {
       <div className={`searchContainer ${searchPosition}`}>
         <Search color={pageColor} />
       </div>
-      {/* <div className={`hamburgercontainer ${hamburgerPosition}`}>
+      <div className={`hamburgercontainer ${hamburgerPosition}`}>
         <Hamburger
           navbarPosition={navbarPosition}
           color={pageColor}
           hamlinks={[
-            {
-              hamlinkTitle: "Model Y",
-              hamlinkUrl: "https://www.tesla.com/he_il/modely",
-            },
-            { hamlinkTitle: "Model X", hamlinkUrl: "" },
-            { hamlinkTitle: "Model 3 ", hamlinkUrl: "" },
-            { hamlinkTitle: "Model S", hamlinkUrl: "" },
+            { hamlinkTitle: "Home", hamlinkUrl: "/" },
+            { hamlinkTitle: "Donate", hamlinkUrl: `donate` },
+            { hamlinkTitle: "North ", hamlinkUrl: "north" },
+            { hamlinkTitle: "Center ", hamlinkUrl: "center" },
+            { hamlinkTitle: "South ", hamlinkUrl: "south" },
+            { hamlinkTitle: "Calender ", hamlinkUrl: "calender" },
           ]}
         />
-      </div> */}
+      </div>
     </div>
   );
 }

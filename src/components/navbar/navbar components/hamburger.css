@@ -12,6 +12,9 @@
   justify-content: space-around;
   align-items: center;
 }
+.hamburger {
+  visibility: hidden;
+}
 @keyframes open1 {
   from {
     width: 0%;
@@ -84,7 +87,7 @@
   scale: 1.2;
 }
 .blue.hamburgerdiv {
-  background-color: blue;
+  background-color: #013a6b;
   color: black;
   border-bottom: 2px black solid;
   border-left: 2px black solid;

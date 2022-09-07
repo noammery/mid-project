@@ -1,5 +1,6 @@
 import "./hamburger.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Hamburger(props) {
   const [visible, setVisible] = useState("false");
   return (
@@ -18,14 +19,12 @@ function Hamburger(props) {
       >
         {props.hamlinks.map((hamlink, index) => (
           <div key={index}>
-            <a
-              href={hamlink.hamlinkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`navbarlinks  hover-underline-animation hamlinks ${props.color}`}
+            <Link
+              to={hamlink.hamlinkUrl}
+              className={`navbarlinks hover-underline-animation ${props.color}`}
             >
               {hamlink.hamlinkTitle}
-            </a>
+            </Link>
           </div>
         ))}
       </div>

@@ -26,3 +26,26 @@
 .Us a {
   text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+  .ourContainer {
+    flex-direction: column;
+  }
+  .ourOpinion {
+    width: 95vw;
+  }
+  .ourImg {
+    border-radius: 25px;
+    height: 45vh;
+    width: 95vw;
+  }
+  .Us h1 {
+    font-size: 9vw;
+  }
+  .footerImg {
+    height: 8vw;
+    width: 8vw;
+  }
+  .exampleBottom h2 {
+    font-size: 7vw;
+  }
+}
