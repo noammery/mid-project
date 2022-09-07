@@ -51,36 +51,6 @@ const Example = () => {
           <img className="changingImg" src={imgUrl} alt="" />
         </div>
       </div>
-      {/* <div className="exampleBottom">
-        <h2>Contact us here</h2>
-        <div className="footerImgs">
-          <a
-            href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F%3F__coig_login%3D1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={require("./instagram.jpg")}
-              alt=""
-              className="footerImg"
-            />
-          </a>
-          <a
-            href="https://www.whatsapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={require("./whatsapp.png")} alt="" className="footerImg" />
-          </a>
-          <a
-            href="http://www.twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={require("./twitter.png")} alt="" className="footerImg" />
-          </a>
-        </div>
-      </div> */}
     </div>
   );
 };

@@ -34,9 +34,10 @@ function Navbar() {
           links={[
             { linkTitle: "Home", linkUrl: "/" },
             { linkTitle: "Donate", linkUrl: `donate` },
-            { linkTitle: "North ", linkUrl: "/" },
-            { linkTitle: "Center ", linkUrl: "/" },
-            { linkTitle: "South ", linkUrl: "/" },
+            { linkTitle: "North ", linkUrl: "north" },
+            { linkTitle: "Center ", linkUrl: "center" },
+            { linkTitle: "South ", linkUrl: "south" },
+            { linkTitle: "Calender ", linkUrl: "calender" },
           ]}
         />
       </div>

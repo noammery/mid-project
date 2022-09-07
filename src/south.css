@@ -1,83 +1,117 @@
+.southTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%);
+}
+.southBottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(30deg, #76adde 50%, #ffffff 50%);
+}
+.helpContainer {
+  height: 100vh;
+  background: #013a6b;
+}
+.areaImgs {
+  margin-top: 5%;
+}
+.areaImg {
+  border: 1px black solid;
+  height: 25vw;
+  width: 25vw;
+  border-radius: 50%;
+}
 .southHeader {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    ),
-    url("https://www.noacarmon.com/wp-content/uploads/2020/07/3585.jpg");
-  background-attachment: fixed;
-  text-transform: uppercase;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  margin-bottom: 15vh;
-  font-weight: 700;
-  display: inline-flex;
-  place-content: center;
-  font-size: 1.1rem;
-  background-size: contain;
+  width: 30vw;
+  margin-top: 0;
+  padding-top: 5%;
+}
+.southHeader > h3 {
+  margin-bottom: 5%;
+}
+.accordionContainer {
+  width: 30vw;
+  transition: 1s;
+}
+.section {
+  margin-bottom: 5%;
+}
+.inputContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.inputContainer > input {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+.form {
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #013a6b;
+}
+.input {
+  text-align: center;
+  height: 5vh;
+  width: 30vw;
+  background: none;
+  border: none;
+  border-bottom: 1px black solid;
+  border-radius: 25px;
+}
+.input.true {
+  border-radius: 25px;
+  background: #76adde;
+  color: black;
+}
+.input.true::placeholder {
+  color: rgb(255, 255, 255, 0.8);
+}
+.submitButton {
+  width: min-content;
+  margin-top: 3%;
+}
+.South button {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
-.northAbout {
-  margin-bottom: 25vh;
-  font-weight: 400;
-  font-size: 1.6rem;
-}
-
-.button {
-  align-self: center;
+.button-81 {
+  width: fit-content;
+  height: min-content;
   background-color: #fff;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
   box-sizing: border-box;
-  color: #41403e;
+  color: #013a6b;
   cursor: pointer;
   display: inline-block;
-  font-family: Neucha, sans-serif;
-  font-size: 1.5rem;
-  line-height: 23px;
-  outline: none;
-  padding: 0.75rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  transition: 0.5s;
 }
 
-.button:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+.button-81:hover {
+  background-color: #013a6b;
+  color: #fff;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px #76adde;
 }
 
-.button:focus {
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
-}
-
-.buttons {
-  display: grid;
-  align-content: stretch;
-  justify-content: start;
-  list-style: inside;
-}
-
-.accordion {
-  margin-bottom: 20vh;
-}
-
-.MuiPaper-root {
-  margin-bottom: 5vh;
-}
-
-.form {
-  display: inline-grid;
-  justify-items: center;
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
 }
