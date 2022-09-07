@@ -32,9 +32,11 @@ function Navbar() {
           navbarPosition={navbarPosition}
           color={pageColor}
           links={[
-            { linkTitle: "Top", linkUrl: "" },
-            { linkTitle: "About us", linkUrl: `#about` },
-            { linkTitle: "Examples ", linkUrl: "#example" },
+            { linkTitle: "Home", linkUrl: "/" },
+            { linkTitle: "Donate", linkUrl: `donate` },
+            { linkTitle: "North ", linkUrl: "/" },
+            { linkTitle: "Center ", linkUrl: "/" },
+            { linkTitle: "South ", linkUrl: "/" },
           ]}
         />
       </div>

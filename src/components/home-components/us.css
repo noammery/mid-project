@@ -1,0 +1,28 @@
+.Us {
+  height: 110vh;
+  background-image: -webkit-linear-gradient(30deg, #76adde 50%, #ffffff 50%);
+}
+.ourContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.ourImg {
+  border-radius: 25px;
+  height: 55vh;
+  width: 35vw;
+}
+.ourOpinion {
+  width: 50vw;
+}
+.Us h1 {
+  color: black;
+  text-decoration: underline solid 4px #013a6b;
+  margin-top: 7%;
+  text-align: center;
+  font-size: 3.5vw;
+}
+.Us a {
+  text-decoration: none;
+}
