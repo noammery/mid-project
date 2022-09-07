@@ -141,11 +141,13 @@ const North = () => {
             <div className="form">
               <Formik
                 initialValues={{ email: "", name: "", description: "" }}
-                onSubmit={(values) => window.confirm("sent")} // what the submit button does
+                onSubmit={(values) =>
+                  window.confirm("Are you sure you want to send this request?")
+                } // what the submit button does
               >
                 {({ handleSubmit, handleChange, handleBlur, values }) => (
                   <form onSubmit={handleSubmit} noValidate>
-                    <div>
+                    <div className="inputContainer">
                       <input
                         className="input"
                         type="name"

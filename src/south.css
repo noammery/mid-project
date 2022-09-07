@@ -13,10 +13,6 @@
   height: 100vh;
   background-image: -webkit-linear-gradient(30deg, #76adde 50%, #ffffff 50%);
 }
-.helpContainer {
-  height: 100vh;
-  background: #013a6b;
-}
 .areaImgs {
   margin-top: 5%;
 }
@@ -61,26 +57,18 @@
   text-align: center;
   height: 5vh;
   width: 30vw;
-  background: none;
   border: none;
   border-bottom: 1px black solid;
   border-radius: 25px;
 }
-.input.true {
-  border-radius: 25px;
-  background: #76adde;
-  color: black;
-}
-.input.true::placeholder {
-  color: rgb(255, 255, 255, 0.8);
-}
+
 .submitButton {
   width: min-content;
   margin-top: 3%;
 }
-.South button {
+button {
   margin-top: 3%;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 .button-81 {

@@ -8,9 +8,7 @@ import { Formik } from "formik";
 import "./south.css";
 
 const South = () => {
-  const [isWrite, setIsWrite] = useState(false);
-  const [isWrite3, setIsWrite3] = useState(false);
-  const [isWrite2, setIsWrite2] = useState(false);
+  const [isSent, setIsSent] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="South">
@@ -122,18 +120,21 @@ const South = () => {
             <div>
               <Formik
                 initialValues={{ email: "", name: "", description: "" }}
-                onSubmit={(values) => window.confirm("sent")} // what the submit button does
+                onSubmit={(values) => {
+                  if (
+                    window.confirm(
+                      "Are you sure you want to send this request?"
+                    )
+                  ) {
+                    setIsSent(true);
+                  }
+                }} // what the submit button does
               >
                 {({ handleSubmit, handleChange, handleBlur, values }) => (
                   <form onSubmit={handleSubmit} noValidate>
                     <div className="inputContainer">
                       <input
-                        onClick={() =>
-                          isWrite === false
-                            ? setIsWrite(true)
-                            : setIsWrite(false)
-                        }
-                        className={`input ${isWrite}`}
+                        className={`input `}
                         type="name"
                         name="name"
                         placeholder="name"
@@ -143,12 +144,7 @@ const South = () => {
                       />
 
                       <input
-                        onClick={() =>
-                          isWrite2 === false
-                            ? setIsWrite2(true)
-                            : setIsWrite2(false)
-                        }
-                        className={`input ${isWrite2}`}
+                        className={`input`}
                         type="email"
                         name="email"
                         placeholder="email"
@@ -158,12 +154,7 @@ const South = () => {
                       />
 
                       <textarea
-                        onClick={() =>
-                          isWrite3 === false
-                            ? setIsWrite3(true)
-                            : setIsWrite3(false)
-                        }
-                        className={`input ${isWrite3}`}
+                        className={`input`}
                         type="description"
                         name="description"
                         placeholder="description"
@@ -179,6 +170,7 @@ const South = () => {
                       >
                         send
                       </button>
+                      {isSent ? <div>hello</div> : <></>}
                     </div>
                   </form>
                 )}
