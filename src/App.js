@@ -7,6 +7,7 @@ import "./north.css";
 import "./south.css";
 import "./center.css";
 import South from "./South";
+import EventList from "./components/event-list-components/EventList"
 
 function App() {
   return (
