@@ -8,8 +8,12 @@ import { Formik } from "formik";
 import "./south.css";
 
 const South = () => {
-  const [isSent, setIsSent] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [expanded, setExpanded] = React.useState(false);
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   return (
     <div className="South">
       <div className="southTop">
@@ -31,9 +35,13 @@ const South = () => {
       </div>
       <div className="southBottom">
         <div className="accordionContainer">
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel1"}
+            onChange={handleChange("panel1")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel1bh-content"
               id="panel1a-header"
             >
               <Typography>Volunteering at Soroka Hospital</Typography>
@@ -46,9 +54,13 @@ const South = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel2"}
+            onChange={handleChange("panel2")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel2bh-content"
               id="panel1a-header"
             >
               <Typography>Rehabilitation of "Darom Adom"</Typography>
@@ -60,9 +72,13 @@ const South = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel3bh-content"
               id="panel1a-header"
             >
               <Typography>Magen David Adom - South region</Typography>
@@ -78,9 +94,13 @@ const South = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel4bh-content"
               id="panel1a-header"
             >
               <Typography>Company hosting for older people</Typography>
@@ -92,9 +112,13 @@ const South = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel5"}
+            onChange={handleChange("panel5")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel5bh-content"
               id="panel1a-header"
             >
               <Typography>

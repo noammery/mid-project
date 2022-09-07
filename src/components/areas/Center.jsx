@@ -9,6 +9,11 @@ import "./center.css";
 
 const Center = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [expanded, setExpanded] = React.useState(false);
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   return (
     <div className="Center">
       <div className="centerTop">
@@ -29,9 +34,13 @@ const Center = () => {
       </div>
       <div className="centerBottom">
         <div className="accordion">
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel1"}
+            onChange={handleChange("panel1")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel1bh-content"
               id="panel1a-header"
             >
               <Typography>
@@ -50,9 +59,13 @@ const Center = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel2"}
+            onChange={handleChange("panel2")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel2bh-content"
               id="panel1a-header"
             >
               <Typography>
@@ -69,9 +82,13 @@ const Center = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel3bh-content"
               id="panel1a-header"
             >
               <Typography>Magen David Adom - Central region</Typography>
@@ -87,9 +104,13 @@ const Center = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel4bh-content"
               id="panel1a-header"
             >
               <Typography>"Mabruk"</Typography>
@@ -104,9 +125,13 @@ const Center = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel5"}
+            onChange={handleChange("panel5")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel5bh-content"
               id="panel1a-header"
             >
               <Typography>Singing in nursing homes</Typography>
@@ -118,9 +143,13 @@ const Center = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel6"}
+            onChange={handleChange("panel6")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel6bh-content"
               id="panel1a-header"
             >
               <Typography>Minimizing drug harm</Typography>
@@ -140,9 +169,13 @@ const Center = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel7"}
+            onChange={handleChange("panel7")}
+          >
             <AccordionSummary
-              aria-controls="panel2a-content"
+              aria-controls="panel7bh-content"
               id="panel1a-header"
             >
               <Typography>Food packaging for the needy</Typography>
