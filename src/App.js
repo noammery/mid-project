@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Form from "./components/form-components/Form";
 import Home from "./Home";
-import North from "./North";
-import Center from "./Center";
-import South from "./South";
+import North from "./components/areas/North";
+import Center from "./components/areas/Center";
+import South from "./components/areas/South";
 import EventList from "./components/event-list-components/EventList";
 
 function App() {
