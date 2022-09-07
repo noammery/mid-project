@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useRef, useState } from "react";
 import "./about.css";
-import Navigation from "./Navigation";
+
 const About = () => {
   const MyRef = useRef();
   const [animationstart, setAnimationStart] = useState();
@@ -17,7 +17,7 @@ const About = () => {
     <div className="aboutandnav" id="about">
       <div className={`About ${animationstart}`} ref={MyRef}>
         <div>
-          <h1>About - us</h1>
+          <h1>About - us:</h1>
           <div>
             <h2>Who we are?</h2>
             <p>
@@ -39,7 +39,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Navigation isShown={animationstart} />
+      <img
+        src={require("./firstimg.jpg")}
+        className={`aboutImg ${animationstart}`}
+      />
     </div>
   );
 };
