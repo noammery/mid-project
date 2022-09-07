@@ -6,9 +6,26 @@ import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { Formik } from "formik";
 import "./center.css";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
 
 const Center = () => {
+  // const [isSent, setIsSent] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 400,
+    bgcolor: "background.paper",
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
+  };
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div className="Center">
       <div className="centerTop">
@@ -24,6 +41,7 @@ const Center = () => {
           <img
             src="https://www.hotelscombined.co.il/rimg/dimg/65/be/5907f602-city-54749-166a780a201.jpg"
             className="areaImg"
+            alt=""
           />
         </div>
       </div>
@@ -166,9 +184,15 @@ const Center = () => {
             <div>
               <Formik
                 initialValues={{ email: "", name: "", description: "" }}
-                onSubmit={(values) =>
-                  window.confirm("Are you sure you want to send this request?")
-                } // what the submit button does
+                onSubmit={(values) => {
+                  if (
+                    window.confirm(
+                      "Are you sure you want to send this request?"
+                    )
+                  ) {
+                    handleOpen();
+                  }
+                }} // what the submit button does
               >
                 {({ handleSubmit, handleChange, handleBlur, values }) => (
                   <form onSubmit={handleSubmit} noValidate>
@@ -182,7 +206,6 @@ const Center = () => {
                         value={values.name}
                         onBlur={handleBlur}
                       />
-
                       <input
                         className="input"
                         type="email"
@@ -192,7 +215,6 @@ const Center = () => {
                         value={values.email}
                         onBlur={handleBlur}
                       />
-
                       <textarea
                         className="input"
                         type="description"
@@ -202,10 +224,34 @@ const Center = () => {
                         value={values.description}
                         onBlur={handleBlur}
                       />
-
                       <button className="button-81" type="submit">
                         send
                       </button>
+                      <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                      >
+                        <Box sx={style}>
+                          <Typography
+                            id="modal-modal-title"
+                            variant="h6"
+                            component="h2"
+                          >
+                            Congratulations!
+                          </Typography>
+                          <Typography
+                            id="modal-modal-description"
+                            sx={{ mt: 2 }}
+                          >
+                            Your request has been sent!
+                            <p style={{ fontSize: "xsmall" }}>
+                              Click away to dismiss
+                            </p>
+                          </Typography>
+                        </Box>
+                      </Modal>
                     </div>
                   </form>
                 )}
