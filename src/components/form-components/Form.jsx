@@ -96,13 +96,15 @@ export default function Form() {
           )}
         </div>
 
+
         <div>
           <label>Billing Address</label>
           <input {...register("adress")} />
           {errors?.adress && <p>{errors?.adress?.message || "Error!"}</p>}
+
         </div>
 
-        <input type="submit" disabled={!isValid} />
+        <input value="SUBMIT" type="submit" disabled={!isValid} />
       </form>
     </div>
   );
