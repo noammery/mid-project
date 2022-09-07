@@ -156,57 +156,63 @@ const Center = () => {
             </AccordionDetails>
           </Accordion>
         </div>
-        <div>
-          <button onClick={() => setIsOpen(!isOpen)}>Need our services?</button>
-          {isOpen && (
+      </div>
+      <div className="form">
+        <button className="button-81" onClick={() => setIsOpen(!isOpen)}>
+          Need our services?
+        </button>
+        {isOpen && (
+          <div>
             <div>
-              <div className="form">
-                <Formik
-                  initialValues={{ email: "", name: "", description: "" }}
-                  onSubmit={(values) => window.confirm("sent")} // what the submit button does
-                >
-                  {({ handleSubmit, handleChange, handleBlur, values }) => (
-                    <form onSubmit={handleSubmit} noValidate>
-                      <div>
-                        <input
-                          className="input"
-                          type="name"
-                          name="name"
-                          placeholder="name"
-                          onChange={handleChange}
-                          value={values.name}
-                          onBlur={handleBlur}
-                        />
+              <Formik
+                initialValues={{ email: "", name: "", description: "" }}
+                onSubmit={(values) =>
+                  window.confirm("Are you sure you want to send this request?")
+                } // what the submit button does
+              >
+                {({ handleSubmit, handleChange, handleBlur, values }) => (
+                  <form onSubmit={handleSubmit} noValidate>
+                    <div className="inputContainer">
+                      <input
+                        className="input"
+                        type="name"
+                        name="name"
+                        placeholder="name"
+                        onChange={handleChange}
+                        value={values.name}
+                        onBlur={handleBlur}
+                      />
 
-                        <input
-                          className="input"
-                          type="email"
-                          name="email"
-                          placeholder="email"
-                          onChange={handleChange}
-                          value={values.email}
-                          onBlur={handleBlur}
-                        />
+                      <input
+                        className="input"
+                        type="email"
+                        name="email"
+                        placeholder="email"
+                        onChange={handleChange}
+                        value={values.email}
+                        onBlur={handleBlur}
+                      />
 
-                        <textarea
-                          className="input"
-                          type="description"
-                          name="description"
-                          plholder="deiption"
-                          onChange={handleChange}
-                          value={values.description}
-                          onBlur={handleBlur}
-                        />
+                      <textarea
+                        className="input"
+                        type="description"
+                        name="description"
+                        plholder="deiption"
+                        onChange={handleChange}
+                        value={values.description}
+                        onBlur={handleBlur}
+                      />
 
-                        <button type="submit">send</button>
-                      </div>
-                    </form>
-                  )}
-                </Formik>
-              </div>
+                      <button className="button-81" type="submit">
+                        send
+                      </button>
+                    </div>
+                  </form>
+                )}
+              </Formik>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
