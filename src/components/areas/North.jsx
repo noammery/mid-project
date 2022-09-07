@@ -26,6 +26,11 @@ const North = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  const [expanded, setExpanded] = React.useState(false);
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   return (
     <div className="North">
       <div className="northTop">
@@ -48,9 +53,13 @@ const North = () => {
       </div>
       <div className="northBottom">
         <div className="accordionContainer">
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel1"}
+            onChange={handleChange("panel1")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel1bh-content"
               id="panel1a-header"
             >
               <Typography>Volunteering with animals</Typography>
@@ -64,9 +73,13 @@ const North = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel2"}
+            onChange={handleChange("panel2")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel2bh-content"
               id="panel1a-header"
             >
               <Typography>Support for women after childbirth</Typography>
@@ -80,9 +93,13 @@ const North = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel3bh-content"
               id="panel1a-header"
             >
               <Typography>Magen David Adom - Northen region</Typography>
@@ -98,9 +115,13 @@ const North = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel4bh-content"
               id="panel1a-header"
             >
               <Typography>
@@ -116,9 +137,13 @@ const North = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel5"}
+            onChange={handleChange("panel5")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel5bh-content"
               id="panel1a-header"
             >
               <Typography>Help with homework in schools</Typography>
@@ -131,9 +156,13 @@ const North = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion className="section">
+          <Accordion
+            className="section"
+            expanded={expanded === "panel6"}
+            onChange={handleChange("panel6")}
+          >
             <AccordionSummary
-              aria-controls="panel1a-content"
+              aria-controls="panel6bh-content"
               id="panel1a-header"
             >
               <Typography>
