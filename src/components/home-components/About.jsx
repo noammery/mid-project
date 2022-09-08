@@ -42,6 +42,7 @@ const About = () => {
       <img
         src={require("./firstimg.jpg")}
         className={`aboutImg ${animationstart}`}
+        alt=""
       />
     </div>
   );

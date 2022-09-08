@@ -1,6 +1,6 @@
 .Us {
-  height: 110vh;
-  background-image: -webkit-linear-gradient(30deg, #76adde 50%, #ffffff 50%);
+  height: 100vh;
+  background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%);
 }
 .ourContainer {
   display: flex;
@@ -19,7 +19,7 @@
 .Us h1 {
   color: black;
   text-decoration: underline solid 4px #013a6b;
-  margin-top: 7%;
+  /* margin-top: 7%; */
   text-align: center;
   font-size: 3.5vw;
 }
