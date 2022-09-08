@@ -281,6 +281,38 @@ const Center = () => {
           </Accordion>
           <Accordion
             className="section"
+            expanded={expanded === "panel8"}
+            onChange={handleChange("panel8")}
+          >
+            <AccordionSummary
+              aria-controls="panel8bh-content"
+              id="panel1a-header"
+            >
+              <Typography>Association to fight cancer - Givatayim</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Volunteers are needed who are open-hearted, sensitive and
+                willing to help with the branch's activities.
+                <p>date: 17.09.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Association to fight cancer - Givatayim",
+                        start: new Date(2022, 8, 17),
+                        end: new Date(2022, 8, 17),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            className="section"
             expanded={expanded === "panel7"}
             onChange={handleChange("panel7")}
           >
@@ -314,6 +346,7 @@ const Center = () => {
           </Accordion>
         </div>
       </div>
+      <div className="emptyDiv"></div>
       <div className="form">
         <button className="button-81" onClick={() => setIsOpen(!isOpen)}>
           Need our services?

@@ -66,7 +66,7 @@ const North = () => {
               aria-controls="panel1bh-content"
               id="panel1a-header"
             >
-              <Typography>Volunteering with animals</Typography>
+              <Typography>Volunteering with animals - Gilboa</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -79,7 +79,7 @@ const North = () => {
                   onClick={() =>
                     dispatch(
                       addEvent({
-                        title: "Volunteering with animals",
+                        title: "Volunteering with animals - Gilboa",
                         start: new Date(2022, 8, 28),
                         end: new Date(2022, 8, 30),
                       })
@@ -100,7 +100,9 @@ const North = () => {
               aria-controls="panel2bh-content"
               id="panel1a-header"
             >
-              <Typography>Support for women after childbirth</Typography>
+              <Typography>
+                Support for women after childbirth in Haifa
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -113,7 +115,7 @@ const North = () => {
                   onClick={() =>
                     dispatch(
                       addEvent({
-                        title: "Support for women after childbirth",
+                        title: "Support for women after childbirth in Haifa",
                         start: new Date(2022, 9, 8),
                         end: new Date(2022, 9, 19),
                       })
@@ -207,7 +209,7 @@ const North = () => {
               aria-controls="panel5bh-content"
               id="panel1a-header"
             >
-              <Typography>Help with homework in schools</Typography>
+              <Typography>Help with homework in "Gordon" school</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -219,7 +221,7 @@ const North = () => {
                   onClick={() =>
                     dispatch(
                       addEvent({
-                        title: "Help with homework in schools",
+                        title: "Help with homework in Gordon school",
                         start: new Date(2022, 8, 19),
                         end: new Date(2022, 8, 24),
                       })
@@ -267,8 +269,45 @@ const North = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
+
+          <Accordion
+            className="section"
+            expanded={expanded === "panel7"}
+            onChange={handleChange("panel7")}
+          >
+            <AccordionSummary
+              aria-controls="panel7bh-content"
+              id="panel1a-header"
+            >
+              <Typography>
+                Distribution of food baskets to needy families - Tzfat
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Movement of food baskets prepared in advance for families in
+                need.
+                <p>dates: 05.10-06.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title:
+                          " Distribution of food baskets to needy families - Tzfat ",
+                        start: new Date(2022, 9, 5),
+                        end: new Date(2022, 9, 6),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </div>
+      <div className="emptyDiv"></div>
       <div className="form">
         <button className="button-81" onClick={() => setIsOpen(!isOpen)}>
           Need our services?
