@@ -6,8 +6,8 @@ import Home from "./Home";
 import North from "./components/areas/North";
 import Center from "./components/areas/Center";
 import South from "./components/areas/South";
-import EventList from "./components/event-list-components/EventList";
 import ScrollToTop from "./ScrollToTop";
+import CalendarComp from "./components/event-list-components/CalendarComp";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="north" element={<North />} />
           <Route path="center" element={<Center />} />
           <Route path="south" element={<South />} />
-          <Route path="calender" element={<EventList />} />
+          <Route path="calender" element={<CalendarComp/>} />
         </Routes>
       </ScrollToTop>
     </div>
