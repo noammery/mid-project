@@ -225,8 +225,43 @@ const South = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
+
+          <Accordion
+            className="section"
+            expanded={expanded === "panel6"}
+            onChange={handleChange("panel6")}
+          >
+            <AccordionSummary
+              aria-controls="panel6bh-content"
+              id="panel1a-header"
+            >
+              <Typography>Volunteering at Kibbutz Lotan </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Volunteers in Lotan work in the kibbutz branches that need
+                manpower - usually kitchen/dining room, tourism, dairy and
+                ornamental. We accept young and healthy people.
+                <p>dates: 06.10-23.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: " Volunteering at Kibbutz Lotan ",
+                        start: new Date(2022, 9, 6),
+                        end: new Date(2022, 9, 23),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </div>
+      <div className="emptyDiv"></div>
       <div className="form">
         <button className="button-81" onClick={() => setIsOpen(!isOpen)}>
           Need our services?
