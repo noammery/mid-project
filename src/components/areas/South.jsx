@@ -10,7 +10,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 
 const South = () => {
-
   const style = {
     position: "absolute",
     top: "50%",
@@ -27,7 +26,6 @@ const South = () => {
   const handleClose = () => setOpen(false);
 
   const [isOpen, setIsOpen] = useState(false);
-  const [isSent, setIsSent] = useState(false);
   const [expanded, setExpanded] = React.useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);

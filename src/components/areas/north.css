@@ -33,3 +33,34 @@
 .northBottom > .accordion {
   width: 30vw;
 }
+@media only screen and (max-width: 768px) {
+  .northTop {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .areaImg {
+    height: 60vw !important;
+    width: 60vw !important;
+    /* margin-top: 15vh; */
+  }
+  .northHeader {
+    background: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px black;
+    width: 90vw;
+    padding: 2px;
+    padding-top: 0;
+    transition: 0.4s;
+  }
+  .northHeader:hover {
+    box-shadow: 4px 4px 4px black;
+    scale: 1.02;
+  }
+  .accordionContainer {
+    width: 90vw !important;
+  }
+  .North button {
+    height: 5vh;
+  }
+}

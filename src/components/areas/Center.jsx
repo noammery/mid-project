@@ -253,7 +253,7 @@ const Center = () => {
                         className="input"
                         type="description"
                         name="description"
-                        plholder="deiption"
+                        placeholder="description"
                         onChange={handleChange}
                         value={values.description}
                         onBlur={handleBlur}
