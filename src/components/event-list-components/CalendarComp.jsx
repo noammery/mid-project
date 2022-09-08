@@ -23,24 +23,24 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
-
-
 export default function CalendarComp() {
-  const events = useSelector(state => state.events.events)
-  const dispatch = useDispatch()
-  const addDate = () => dispatch(addEvent({
-    title: "Conference",
-    start: new Date(2022, 8, 20),
-    end: new Date(2022, 8, 23),
-  }))
-
+  const events = useSelector((state) => state.events.events);
+  const dispatch = useDispatch();
+  const addDate = () =>
+    dispatch(
+      addEvent({
+        title: "Conference",
+        start: new Date(2022, 8, 20),
+        end: new Date(2022, 8, 23),
+      })
+    );
 
   return (
     <div className="App">
       <h1 style={{ marginTop: 0, paddingTop: "5%" }}>Calendar</h1>
       <h2>Add New Event</h2>
-      <Button onClick={()=>addDate()} >add Event</Button>
-      
+      <Button onClick={() => addDate()}>add Event</Button>
+
       <Calendar
         localizer={localizer}
         events={events}

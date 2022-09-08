@@ -8,6 +8,10 @@ import { Formik } from "formik";
 import "./center.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import { Button } from "@mui/material";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux/es/exports";
+import { addEvent } from "../../store/calendarSlice";
 
 const Center = () => {
   // const [isSent, setIsSent] = useState(false);
@@ -31,6 +35,8 @@ const Center = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const events = useSelector((state) => state.events.events);
+  const dispatch = useDispatch();
 
   return (
     <div className="Center">
@@ -51,6 +57,7 @@ const Center = () => {
           />
         </div>
       </div>
+
       <div className="centerBottom">
         <div className="accordion">
           <Accordion
@@ -75,6 +82,21 @@ const Center = () => {
                 volunteering - taking the food from the packing center located
                 on Tel Givorim Street, and distributing it to the families in
                 need according to the registration.
+                <p>dates: 25.9-29.9.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title:
+                          "The association for the promotion of education in Tel Aviv",
+                        start: new Date(2022, 8, 25),
+                        end: new Date(2022, 8, 29),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -98,6 +120,21 @@ const Center = () => {
                 aged 4-12. The volunteers are asked to serve as a kind of mature
                 and significant brother figure for the child, listening
                 attentively and treating, helping with studies, etc.
+                <p>dates: 28.9-30.9.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title:
+                          "The association for the promotion of education in Jaffa",
+                        start: new Date(2022, 8, 28),
+                        end: new Date(2022, 8, 30),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -120,6 +157,20 @@ const Center = () => {
                 responder. Volunteer on ambulances throughout Israel. Where else
                 in the world can you do this? Be on the forefront of emergencies
                 in Israel!
+                <p>dates: 20.9-20.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Magen David Adom - Central region",
+                        start: new Date(2022, 8, 20),
+                        end: new Date(2022, 9, 20),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -141,6 +192,20 @@ const Center = () => {
                 world of weddings, if you are looking for significant
                 volunteering and have a crazy desire to take part in an amazing
                 project - we want you!! Join us in the Mabruk family!
+                <p>dates: 01.10-31.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Mabruk",
+                        start: new Date(2022, 9, 1),
+                        end: new Date(2022, 9, 31),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -159,6 +224,20 @@ const Center = () => {
               <Typography>
                 Come sing and make old people happy in nursing homes in the
                 center.
+                <p>date: 27.09.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Singing in nursing homes",
+                        start: new Date(2022, 8, 27),
+                        end: new Date(2022, 8, 27),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -185,6 +264,20 @@ const Center = () => {
                 through access to food, clothing, hot showers, clean syringes
                 and above all through the presence of humanity for the people
                 whose life circumstances pushed them to the margins.
+                <p>dates: 07.10-15.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Minimizing drug harm",
+                        start: new Date(2022, 9, 7),
+                        end: new Date(2022, 9, 15),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -204,6 +297,20 @@ const Center = () => {
                 Food packaging of food donated to us and brought to the
                 destination when necessary. The food is donated to people who do
                 not have the financial ability to buy food for themselves.
+                <p>dates: 21.09-01.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Minimizing drug harm",
+                        start: new Date(2022, 8, 21),
+                        end: new Date(2022, 9, 1),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
