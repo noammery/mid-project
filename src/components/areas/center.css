@@ -37,6 +37,17 @@
 .centerBottom > .accordion {
   width: 30vw;
 }
+.section {
+  background-color: #01396a !important;
+  color: white !important;
+  text-align: center !important;
+  box-shadow: 4px 4px 4px black !important;
+  border: none !important;
+  transition: 0.5s !important;
+}
+.section:hover {
+  scale: 1.03;
+}
 @media only screen and (max-width: 768px) {
   .centerTop {
     flex-direction: column-reverse;
