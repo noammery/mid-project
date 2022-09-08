@@ -18,7 +18,11 @@ function Hamburger(props) {
         className={` hamburgerdiv  ${props.color} ${visible} ${props.navbarPosition} ${visible}`}
       >
         {props.hamlinks.map((hamlink, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            className="hamLinksContainer"
+            onClick={() => setVisible("false")}
+          >
             <Link
               to={hamlink.hamlinkUrl}
               className={`navbarlinks hover-underline-animation ${props.color}`}

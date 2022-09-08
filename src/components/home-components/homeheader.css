@@ -13,7 +13,10 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.non {
+  font-size: 4vw;
+  margin-right: 10vw;
+}
 .volunteer {
   font-size: 3vw;
   margin-left: 10vw;

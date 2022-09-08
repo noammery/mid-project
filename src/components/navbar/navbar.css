@@ -129,7 +129,7 @@
 }
 @media only screen and (max-width: 768px) {
   .title {
-    display: none;
+    padding-left: 5vw;
   }
   .logoImg {
     width: 80px;
@@ -173,6 +173,17 @@
     }
     to {
       width: 0%;
+    }
+  }
+  .hamLinksContainer {
+    animation: hamlinkopen 1s;
+  }
+  @keyframes hamlinkopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }
