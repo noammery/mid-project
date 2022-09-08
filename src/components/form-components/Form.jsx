@@ -28,7 +28,7 @@ const schema = yup.object().shape({
     .string()
     .required()
     .matches(/^[0-9]+$/, "Must be only digits")
-    .min(16, "Must be exactly 5 digits")
+    .min(16, "Must be exactly 16 digits")
     .max(16, "Must be exactly 12 digits"),
   adress: yup.string().required(),
 });
@@ -96,12 +96,10 @@ export default function Form() {
           )}
         </div>
 
-
         <div>
           <label>Billing Address</label>
           <input {...register("adress")} />
           {errors?.adress && <p>{errors?.adress?.message || "Error!"}</p>}
-
         </div>
 
         <input value="SUBMIT" type="submit" disabled={!isValid} />
