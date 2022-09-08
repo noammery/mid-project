@@ -17,7 +17,7 @@ const Us = () => {
             "NON" Team 2022
           </h5>
         </div>
-        <img src={require("./us.jpg")} className="ourImg" />
+        <img src={require("./us.jpg")} className="ourImg" alt="" />
       </div>
       <Link to="donate">
         <h1>SUPPORT US TODAY!</h1>

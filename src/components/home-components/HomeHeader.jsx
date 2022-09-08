@@ -8,7 +8,6 @@ const HomeHeader = () => {
       <div className="volunteer">
         <h1>volunteer</h1>
       </div>
-      {/* <a href="#about">about</a> */}
     </div>
   );
 };
