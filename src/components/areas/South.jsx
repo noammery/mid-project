@@ -8,6 +8,9 @@ import { Formik } from "formik";
 import "./south.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import { Button } from "@mui/material";
+import { useDispatch } from "react-redux/es/exports";
+import { addEvent } from "../../store/calendarSlice";
 
 const South = () => {
   const style = {
@@ -24,6 +27,7 @@ const South = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const dispatch = useDispatch();
 
   const [isOpen, setIsOpen] = useState(false);
   const [expanded, setExpanded] = React.useState(false);
@@ -68,6 +72,20 @@ const South = () => {
                 Helping patients by raising morale. You can bring tasty things
                 or board games or anything you think will make the patients
                 happy.
+                <p>dates: 25.09-04.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Volunteering at Soroka Hospital",
+                        start: new Date(2022, 8, 25),
+                        end: new Date(2022, 9, 4),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -86,6 +104,20 @@ const South = () => {
               <Typography>
                 Helping farmers in restoring the garden. Volunteering is a
                 little physical and suitable for young people.
+                <p>dates: 21.09-22.09.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Rehabilitation of Darom Adom",
+                        start: new Date(2022, 8, 21),
+                        end: new Date(2022, 8, 22),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -108,6 +140,20 @@ const South = () => {
                 responder. Volunteer on ambulances throughout Israel. Where else
                 in the world can you do this? Be on the forefront of emergencies
                 in Israel!
+                <p>dates: 01.10-31.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Magen David Adom - South region",
+                        start: new Date(2022, 9, 1),
+                        end: new Date(2022, 9, 31),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -126,6 +172,20 @@ const South = () => {
               <Typography>
                 Come as long as you want to host company and make them feel
                 good.
+                <p>date: 15.11.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Company hosting for older people",
+                        start: new Date(2022, 10, 15),
+                        end: new Date(2022, 10, 15),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>{" "}
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -146,7 +206,22 @@ const South = () => {
               <Typography>
                 Help with the Hebrew language and hosting the families on
                 Israeli holidays. You should introduce them to our customs and
-                culture as much as possible
+                culture as much as possible.
+                <p>dates: 18.10-27.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title:
+                          " Accompanying new immigrants and their families in the community",
+                        start: new Date(2022, 9, 18),
+                        end: new Date(2022, 9, 27),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
