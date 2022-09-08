@@ -9,7 +9,6 @@ import "./center.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { Button } from "@mui/material";
-import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux/es/exports";
 import { addEvent } from "../../store/calendarSlice";
 
@@ -35,7 +34,6 @@ const Center = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const events = useSelector((state) => state.events.events);
   const dispatch = useDispatch();
 
   return (
