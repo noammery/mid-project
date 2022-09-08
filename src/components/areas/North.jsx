@@ -8,6 +8,9 @@ import { Formik } from "formik";
 import "./north.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import { Button } from "@mui/material";
+import { useDispatch } from "react-redux/es/exports";
+import { addEvent } from "../../store/calendarSlice";
 
 const North = () => {
   // const [isSent, setIsSent] = useState(false);
@@ -26,6 +29,7 @@ const North = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [isOpen, setIsOpen] = useState(false);
+  const dispatch = useDispatch();
 
   const [expanded, setExpanded] = React.useState(false);
   const handleChange = (panel) => (event, isExpanded) => {
@@ -70,6 +74,20 @@ const North = () => {
                 regulations by units of volunteers in the field, who handle
                 cases of neglect and abuse while responding to requests from the
                 public.
+                <p>dates: 28.09-30.09.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Volunteering with animals",
+                        start: new Date(2022, 8, 28),
+                        end: new Date(2022, 8, 30),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -90,6 +108,20 @@ const North = () => {
                 sensitivity and lack of judgment. The volunteering is short-term
                 and is done in the free time of the supporting mother, and in
                 the vicinity of her residence.
+                <p>dates: 08.10-19.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Support for women after childbirth",
+                        start: new Date(2022, 9, 8),
+                        end: new Date(2022, 9, 19),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -112,6 +144,20 @@ const North = () => {
                 responder. Volunteer on ambulances throughout Israel. Where else
                 in the world can you do this? Be on the forefront of emergencies
                 in Israel!
+                <p>dates: 01.10-31.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Magen David Adom - Northen region",
+                        start: new Date(2022, 9, 1),
+                        end: new Date(2022, 9, 31),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -134,6 +180,21 @@ const North = () => {
                 Giving cycling lessons to a variety of disabled people while
                 being patient and supporting them.Intended only for those who
                 ride a bicycle very well.
+                <p>dates: 06.10-10.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title:
+                          "Accompanying children youth and adults with disabilities in cycling classes",
+                        start: new Date(2022, 9, 6),
+                        end: new Date(2022, 9, 10),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -153,6 +214,20 @@ const North = () => {
                 Play with the elderly in board games of their choice. The
                 volunteering is in a variety of nursing homes in the north and
                 lasts only about an hour.
+                <p>dates: 19.09-24.09.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title: "Help with homework in schools",
+                        start: new Date(2022, 8, 19),
+                        end: new Date(2022, 8, 24),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -174,6 +249,21 @@ const North = () => {
                 Play with the elderly in board games of their choice. The
                 volunteering is in a variety of nursing homes in the north and
                 lasts only about an hour.
+                <p>dates: 11.10-16.10.2022</p>
+                <Button
+                  onClick={() =>
+                    dispatch(
+                      addEvent({
+                        title:
+                          "An hour of playing board games with the elderly",
+                        start: new Date(2022, 9, 11),
+                        end: new Date(2022, 9, 16),
+                      })
+                    )
+                  }
+                >
+                  I will go
+                </Button>
               </Typography>
             </AccordionDetails>
           </Accordion>
