@@ -62,5 +62,9 @@
   }
   .North button {
     height: 5vh;
+    width: 50vw;
+  }
+  .North.input {
+    height: 3vh !important;
   }
 }

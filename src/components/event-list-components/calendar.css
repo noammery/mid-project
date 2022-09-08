@@ -2,3 +2,9 @@
   background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%);
   height: fit-content;
 }
+@media only screen and (max-width: 768px) {
+  .Calendar {
+    height: 90vh;
+    padding-top: 10vh;
+  }
+}
