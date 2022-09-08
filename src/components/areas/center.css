@@ -49,6 +49,9 @@
   scale: 1.03;
 }
 @media only screen and (max-width: 768px) {
+  .MuiBox-root {
+    width: 50vw !important;
+  }
   .centerTop {
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -77,5 +80,9 @@
   }
   .Center button {
     height: 5vh;
+    width: 50vw;
+  }
+  .Center.input {
+    height: 3vh !important;
   }
 }
