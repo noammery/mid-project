@@ -8,9 +8,10 @@ import { Formik } from "formik";
 import "./south.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import { Button } from "@mui/material";
 import { useDispatch } from "react-redux/es/exports";
 import { addEvent } from "../../store/calendarSlice";
+import RegisterModal from "../button-form-components/RegisterModal";
+
 
 const South = () => {
   const style = {
@@ -73,8 +74,7 @@ const South = () => {
                 or board games or anything you think will make the patients
                 happy.
                 <p>dates: 25.09-04.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Volunteering at Soroka Hospital",
@@ -85,7 +85,7 @@ const South = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -105,8 +105,7 @@ const South = () => {
                 Helping farmers in restoring the garden. Volunteering is a
                 little physical and suitable for young people.
                 <p>dates: 21.09-22.09.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Rehabilitation of Darom Adom",
@@ -117,7 +116,7 @@ const South = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -141,8 +140,7 @@ const South = () => {
                 in the world can you do this? Be on the forefront of emergencies
                 in Israel!
                 <p>dates: 01.10-31.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Magen David Adom - South region",
@@ -153,7 +151,7 @@ const South = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -173,8 +171,7 @@ const South = () => {
                 Come as long as you want to host company and make them feel
                 good.
                 <p>date: 15.11.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Company hosting for older people",
@@ -185,7 +182,7 @@ const South = () => {
                   }
                 >
                   I will go
-                </Button>{" "}
+                </RegisterModal>{" "}
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -208,8 +205,7 @@ const South = () => {
                 Israeli holidays. You should introduce them to our customs and
                 culture as much as possible.
                 <p>dates: 18.10-27.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title:
@@ -221,7 +217,7 @@ const South = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -243,8 +239,7 @@ const South = () => {
                 manpower - usually kitchen/dining room, tourism, dairy and
                 ornamental. We accept young and healthy people.
                 <p>dates: 06.10-23.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: " Volunteering at Kibbutz Lotan ",
@@ -255,7 +250,7 @@ const South = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>

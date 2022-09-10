@@ -8,9 +8,9 @@ import { Formik } from "formik";
 import "./center.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import { Button } from "@mui/material";
 import { useDispatch } from "react-redux/es/exports";
 import { addEvent } from "../../store/calendarSlice";
+import RegisterModal from "../button-form-components/RegisterModal";
 
 const Center = () => {
   // const [isSent, setIsSent] = useState(false);
@@ -81,20 +81,18 @@ const Center = () => {
                 on Tel Givorim Street, and distributing it to the families in
                 need according to the registration.
                 <p>dates: 25.9-29.9.2022</p>
-                <Button
-                  onClick={() =>
-                    dispatch(
-                      addEvent({
-                        title:
-                          "The association for the promotion of education in Tel Aviv",
-                        start: new Date(2022, 8, 25),
-                        end: new Date(2022, 8, 29),
-                      })
-                    )
-                  }
-                >
-                  I will go
-                </Button>
+
+                <RegisterModal newEvent={() =>
+                  dispatch(
+                    addEvent({
+                      title:
+                        "The association for the promotion of education in Tel Aviv",
+                      start: new Date(2022, 8, 25),
+                      end: new Date(2022, 8, 29),
+                    })
+                  )}>
+
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -119,8 +117,7 @@ const Center = () => {
                 and significant brother figure for the child, listening
                 attentively and treating, helping with studies, etc.
                 <p>dates: 28.9-30.9.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title:
@@ -132,8 +129,9 @@ const Center = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
+
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -156,8 +154,7 @@ const Center = () => {
                 in the world can you do this? Be on the forefront of emergencies
                 in Israel!
                 <p>dates: 20.9-20.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Magen David Adom - Central region",
@@ -168,7 +165,7 @@ const Center = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -191,8 +188,7 @@ const Center = () => {
                 volunteering and have a crazy desire to take part in an amazing
                 project - we want you!! Join us in the Mabruk family!
                 <p>dates: 01.10-31.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Mabruk",
@@ -203,7 +199,7 @@ const Center = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -223,8 +219,7 @@ const Center = () => {
                 Come sing and make old people happy in nursing homes in the
                 center.
                 <p>date: 27.09.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Singing in nursing homes",
@@ -235,7 +230,7 @@ const Center = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -263,8 +258,7 @@ const Center = () => {
                 and above all through the presence of humanity for the people
                 whose life circumstances pushed them to the margins.
                 <p>dates: 07.10-15.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Minimizing drug harm",
@@ -275,7 +269,7 @@ const Center = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -295,8 +289,7 @@ const Center = () => {
                 Volunteers are needed who are open-hearted, sensitive and
                 willing to help with the branch's activities.
                 <p>date: 17.09.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Association to fight cancer - Givatayim",
@@ -307,7 +300,7 @@ const Center = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -328,8 +321,7 @@ const Center = () => {
                 destination when necessary. The food is donated to people who do
                 not have the financial ability to buy food for themselves.
                 <p>dates: 21.09-01.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Minimizing drug harm",
@@ -340,7 +332,7 @@ const Center = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
