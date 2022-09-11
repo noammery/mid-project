@@ -8,6 +8,7 @@ import Center from "./components/areas/Center";
 import South from "./components/areas/South";
 import ScrollToTop from "./ScrollToTop";
 import CalendarComp from "./components/event-list-components/CalendarComp";
+import Meet from "./components/areas/meet-the-team/Meet";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path="north" element={<North />} />
           <Route path="center" element={<Center />} />
           <Route path="south" element={<South />} />
-          <Route path="calender" element={<CalendarComp/>} />
+          <Route path="calender" element={<CalendarComp />} />
+          <Route path="meetus" element={<Meet />} />
         </Routes>
       </ScrollToTop>
     </div>

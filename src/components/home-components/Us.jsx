@@ -13,15 +13,16 @@ const Us = () => {
             place!"
           </h2>
           <h5 style={{ opacity: "0.5", textAlign: "center" }}>
-            {" "}
             "NON" Team 2022
           </h5>
+          <Link to="meetus">Meet the team</Link>
         </div>
         <img src={require("./us.jpg")} className="ourImg" alt="" />
       </div>
       <Link to="donate">
         <h1>SUPPORT US TODAY!</h1>
       </Link>
+
       <div className="exampleBottom">
         <h2>Contact us via:</h2>
         <div className="footerImgs">
