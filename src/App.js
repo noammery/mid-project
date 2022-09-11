@@ -8,7 +8,7 @@ import Center from "./components/areas/Center";
 import South from "./components/areas/South";
 import ScrollToTop from "./ScrollToTop";
 import CalendarComp from "./components/event-list-components/CalendarComp";
-import Meet from "./components/areas/meet-the-team/Meet";
+import Meet from "./components/meet-the-team/Meet";
 
 function App() {
   return (
