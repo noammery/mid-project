@@ -8,6 +8,13 @@
   justify-content: space-around;
   flex-direction: row-reverse;
 }
+.meetUsLink {
+  text-decoration: 2px underline solid black;
+  text-align: center;
+}
+.meetUsLink a {
+  color: #013a6b;
+}
 .ourImg {
   border-radius: 25px;
   height: 55vh;
