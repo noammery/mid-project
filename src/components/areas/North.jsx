@@ -8,9 +8,10 @@ import { Formik } from "formik";
 import "./north.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import { Button } from "@mui/material";
 import { useDispatch } from "react-redux/es/exports";
 import { addEvent } from "../../store/calendarSlice";
+import RegisterModal from "../button-form-components/RegisterModal";
+
 
 const North = () => {
   // const [isSent, setIsSent] = useState(false);
@@ -75,8 +76,7 @@ const North = () => {
                 cases of neglect and abuse while responding to requests from the
                 public.
                 <p>dates: 28.09-30.09.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Volunteering with animals - Gilboa",
@@ -87,7 +87,7 @@ const North = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -111,8 +111,7 @@ const North = () => {
                 and is done in the free time of the supporting mother, and in
                 the vicinity of her residence.
                 <p>dates: 08.10-19.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Support for women after childbirth in Haifa",
@@ -123,7 +122,7 @@ const North = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -147,8 +146,7 @@ const North = () => {
                 in the world can you do this? Be on the forefront of emergencies
                 in Israel!
                 <p>dates: 01.10-31.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Magen David Adom - Northen region",
@@ -159,7 +157,7 @@ const North = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -183,8 +181,7 @@ const North = () => {
                 being patient and supporting them.Intended only for those who
                 ride a bicycle very well.
                 <p>dates: 06.10-10.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title:
@@ -196,7 +193,7 @@ const North = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -217,8 +214,7 @@ const North = () => {
                 volunteering is in a variety of nursing homes in the north and
                 lasts only about an hour.
                 <p>dates: 19.09-24.09.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title: "Help with homework in Gordon school",
@@ -229,7 +225,7 @@ const North = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -252,8 +248,7 @@ const North = () => {
                 volunteering is in a variety of nursing homes in the north and
                 lasts only about an hour.
                 <p>dates: 11.10-16.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title:
@@ -265,7 +260,7 @@ const North = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -288,8 +283,7 @@ const North = () => {
                 Movement of food baskets prepared in advance for families in
                 need.
                 <p>dates: 05.10-06.10.2022</p>
-                <Button
-                  onClick={() =>
+                <RegisterModal newEvent={() =>
                     dispatch(
                       addEvent({
                         title:
@@ -301,7 +295,7 @@ const North = () => {
                   }
                 >
                   I will go
-                </Button>
+                </RegisterModal>
               </Typography>
             </AccordionDetails>
           </Accordion>

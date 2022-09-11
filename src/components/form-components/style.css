@@ -8,6 +8,7 @@
 .Form form {
   max-width: 500px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .Form h1 {
@@ -107,16 +108,16 @@
   margin: 0 auto;
 }
 
-.Form button[type="button"] {
+/* .Form button[type="button"] {
   display: block;
   appearance: none;
-  background: #333;
+  background: blue;
   color: white;
   border: none;
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 4px;
-}
+} */
 
 .Form pre {
   color: white;
@@ -126,7 +127,7 @@
   margin-top: 30px;
 }
 
-.Form button {
+/* .Form button {
   display: block;
   appearance: none;
   margin-top: 40px;
@@ -135,7 +136,7 @@
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 4px;
-}
+} */
 @media only screen and (max-width: 768px) {
   .Form {
     padding-top: 15.3vh;
