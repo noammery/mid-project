@@ -1,33 +1,49 @@
 .Meet {
+  background: #76adde;
   overflow: hidden;
   padding-top: 10vh;
+  margin: 0 !important;
   height: fit-content;
   float: left;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .header h3 {
   color: rgb(0, 0, 0, 0.6);
 }
 
+.header {
+  text-align: center;
+}
+
 .picture {
-  height: 15vw;
-  width: 20vw;
+  object-fit: cover;
+  border: 2px solid black;
+  margin-top: 23vh;
+  margin-left: 5vw;
+  position: absolute;
+  top: 10vh;
+  border-radius: 50%;
+  height: 10vw;
+  width: 10vw;
 }
 
 .us {
+  padding-top: 13vh;
   justify-content: space-around;
   display: flex;
 }
 
 .me {
+  background: white;
+  padding-top: 10vh;
   border: solid rgb(0, 0, 0, 0.3) 0.2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 20vw;
-
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
@@ -63,4 +79,37 @@
 
 .button h4 {
   margin-top: 5vh;
+}
+@media only screen and (max-width: 768px) {
+  .us {
+    align-items: center;
+    flex-direction: column;
+  }
+  .me {
+    height: fit-content;
+    width: 90vw;
+  }
+  .me p {
+    height: 10vh;
+    width: 80vw;
+  }
+  .picture {
+    height: 25vw;
+    width: 25vw;
+  }
+  .picture1 {
+    left: 33vw;
+    top: 12vh;
+  }
+  .picture2 {
+    left: 33vw;
+    top: 63vh;
+  }
+  .picture3 {
+    left: 33vw;
+    top: 114vh;
+  }
+  .meContainer {
+    margin-bottom: 10vh;
+  }
 }
