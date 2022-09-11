@@ -15,7 +15,9 @@ const Us = () => {
           <h5 style={{ opacity: "0.5", textAlign: "center" }}>
             "NON" Team 2022
           </h5>
-          <Link to="meetus">Meet the team</Link>
+          <h3 className="meetUsLink">
+            <Link to="meetus">Meet the team</Link>
+          </h3>
         </div>
         <img src={require("./us.jpg")} className="ourImg" alt="" />
       </div>

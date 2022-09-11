@@ -22,7 +22,6 @@ function Navbar() {
         <Logo
           color={pageColor}
           titledecoration={titledecoration}
-          // logo="https://media-exp1.licdn.com/dms/image/C4E03AQE4v2dzOUokoA/profile-displayphoto-shrink_400_400/0/1661065309729?e=1668038400&v=beta&t=YMU5U4HqF0qFQmAvAohUfjrbEXAOzqkahqVEjbqnnxU"
           title='"NON" Voulnteer'
         />
         {/* Add you logo URL and your NAVBAR title */}
