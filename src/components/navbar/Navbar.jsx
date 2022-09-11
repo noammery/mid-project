@@ -37,6 +37,7 @@ function Navbar() {
             { linkTitle: "Center ", linkUrl: "center" },
             { linkTitle: "South ", linkUrl: "south" },
             { linkTitle: "Calender ", linkUrl: "calender" },
+            { linkTitle: "Team ", linkUrl: "meetus" },
           ]}
         />
       </div>
@@ -54,6 +55,7 @@ function Navbar() {
             { hamlinkTitle: "Center ", hamlinkUrl: "center" },
             { hamlinkTitle: "South ", hamlinkUrl: "south" },
             { hamlinkTitle: "Calender ", hamlinkUrl: "calender" },
+            { hamlinkTitle: "Team ", hamlinkUrl: "meetus" },
           ]}
         />
       </div>
