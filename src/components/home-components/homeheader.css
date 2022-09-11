@@ -11,27 +11,30 @@
   min-height: 100%;
 }
 .ourLogo1 {
-  width: 14vw;
+  overflow: hidden;
+  width: 14%;
   height: auto;
   border-radius: 50%;
 }
 .ourLogo2 {
-  width: 14vw;
+  overflow: hidden;
+  width: 14%;
   height: auto;
   border-radius: 50%;
 }
 .headerContant {
+  overflow: hidden;
+  justify-content: center;
   top: 65vh;
   display: flex;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   background-color: rgb(0, 0, 0, 0.2);
   align-items: center;
 }
 .smallContent {
   overflow: hidden;
-  width: 100%;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {

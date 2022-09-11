@@ -7,7 +7,7 @@ const Animations = () => {
           <span>
             <img src={require("./dogscontrol.png")} alt="" className="imges" />
             <img src={require("./Mabrok.png")} alt="" className="imges" />
-            <img src={require("./MDA.png")} alt="" className="imges" />
+            <img src={require("./MDANEW.png")} alt="" className="imges" />
             <img src={require("./dogscontrol.png")} alt="" className="imges" />
           </span>
         </div>
@@ -16,7 +16,7 @@ const Animations = () => {
             <img src={require("./Mabrok.png")} alt="" className="imges" />
             <img src={require("./carmel.png")} alt="" className="imges" />
             <img src={require("./dogscontrol.png")} alt="" className="imges" />
-            <img src={require("./MDA.png")} alt="" className="imges" />
+            <img src={require("./MDANEW.png")} alt="" className="imges" />
           </span>
         </div>
       </div>
