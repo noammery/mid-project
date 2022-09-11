@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: -webkit-linear-gradient(30deg, #76adde 50%, #ffffff 50%);
+  /* background-image: -webkit-linear-gradient(30deg, #76adde 50%, #ffffff 50%); */
 }
 .exampletop.true {
   animation: aboutEntrence 3s;
