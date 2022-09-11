@@ -22,7 +22,6 @@
 }
 .changingImg {
   border-radius: 25px;
-  height: 55vh;
   width: 30vw;
   transition: 0.4s;
 }

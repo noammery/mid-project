@@ -66,8 +66,8 @@
 }
 .imges {
   margin: 3vw;
-  width: 20vw;
-  height: 10vw;
+  width: 15vw;
+  /* height: 10vw; */
 }
 @keyframes animationOne {
   0% {
