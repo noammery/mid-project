@@ -1,0 +1,66 @@
+.Meet {
+  overflow: hidden;
+  padding-top: 10vh;
+  height: fit-content;
+  float: left;
+  width: 100vw;
+  margin-bottom: 16px;
+}
+
+.header h3 {
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.picture {
+  height: 15vw;
+  width: 20vw;
+}
+
+.us {
+  justify-content: space-around;
+  display: flex;
+}
+
+.me {
+  border: solid rgb(0, 0, 0, 0.3) 0.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.me h5 {
+  color: grey;
+  margin: 0;
+}
+.me h4 {
+  /* margin-bottom: 0; */
+}
+
+.me p {
+  height: 15vh;
+  width: 16vw;
+  text-align: center;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.button:hover {
+  background-color: #555;
+}
+
+.button h4 {
+  margin-top: 5vh;
+}
