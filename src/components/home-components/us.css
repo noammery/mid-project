@@ -1,6 +1,6 @@
 .Us {
-  height: 100vh;
-  background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%);
+  height: 80vh;
+  /* background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%); */
 }
 .ourContainer {
   display: flex;
@@ -22,6 +22,9 @@
   /* margin-top: 7%; */
   text-align: center;
   font-size: 3.5vw;
+}
+.exampleBottom {
+  background: #013a6b;
 }
 .Us a {
   text-decoration: none;

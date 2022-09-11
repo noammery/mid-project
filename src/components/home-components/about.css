@@ -3,7 +3,7 @@
   width: 48vw;
 }
 .aboutandnav {
-  background-image: -webkit-linear-gradient(30deg, #76adde 50%, white 50%);
+  /* background-image: -webkit-linear-gradient(30deg, #76adde 50%, white 50%); */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
 }
 .About hr {
   height: 2px;
-  background: black;
+  background: #013a6b;
 }
 .About h1 {
   font-size: 3vw;

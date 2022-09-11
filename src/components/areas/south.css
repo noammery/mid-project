@@ -81,9 +81,6 @@ button {
   color: #013a6b;
   cursor: pointer;
   display: inline-block;
-  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
   line-height: 1;
   text-align: center;

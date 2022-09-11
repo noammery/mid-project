@@ -1,14 +1,22 @@
-.HomeHeader {
-  font-style: italic;
-  font-size: x-large;
-  background-color: #013a6b;
-  background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%);
+.HOME {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.HomeHeader {
+  background: #76adde;
+  padding: 6vw;
+  font-size: x-large;
+  /* background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%); */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  border: 5px solid #013a6b;
+  border-radius: 50%;
 }
 .HomeHeaderTop {
   margin-top: 10vh;
@@ -18,12 +26,12 @@
   margin-bottom: 0;
 }
 .non {
-  font-size: 4vw;
-  margin-right: 10vw;
+  font-size: 5vw;
+  /* margin-right: 10vw; */
 }
 .volunteer {
   font-size: 3vw;
-  margin-left: 10vw;
+  /* margin-left: 10vw; */
 }
 @media only screen and (max-width: 768px) {
   .non {
