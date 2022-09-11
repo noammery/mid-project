@@ -1,43 +1,40 @@
 .HOME {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: white;
-}
-.HomeHeader {
-  background: #76adde;
-  padding: 6vw;
-  font-size: x-large;
-  /* background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   overflow: hidden;
-  border: 5px solid #013a6b;
-  border-radius: 50%;
 }
-.HomeHeaderTop {
-  margin-top: 10vh;
+.theVideo {
+  opacity: 0.7;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
-.HomeHeader h1 {
-  margin-top: 0;
-  margin-bottom: 0;
+.content {
+  overflow: hidden;
+  /* border-radius: 25px; */
+  /* text-align: center; */
+  height: min-content;
+  padding: 0;
+  width: 35vw;
+  position: absolute;
+  color: #013a6b;
+  top: 45%;
+  left: 0;
+  font-size: 2vw;
 }
-.non {
-  font-size: 5vw;
-  /* margin-right: 10vw; */
+.smallContent {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.2);
+  text-align: center;
+  top: 80vh;
 }
-.volunteer {
-  font-size: 3vw;
-  /* margin-left: 10vw; */
+.ourLogo {
+  position: absolute;
 }
-@media only screen and (max-width: 768px) {
-  .non {
-    font-size: 8vw;
-  }
-  .volunteer {
-    font-size: 5vw;
-  }
+.content h1 {
+  font-family: "Noto Serif", serif;
+  margin: 0;
 }

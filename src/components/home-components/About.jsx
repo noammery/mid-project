@@ -12,7 +12,6 @@ const About = () => {
     });
     observer.observe(MyRef.current);
   });
-  console.log(animationstart);
   return (
     <div className="aboutandnav" id="about">
       <div className={`About ${animationstart}`} ref={MyRef}>
