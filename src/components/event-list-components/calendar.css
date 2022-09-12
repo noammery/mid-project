@@ -2,6 +2,49 @@
   background-image: -webkit-linear-gradient(-30deg, #76adde 50%, #ffffff 50%);
   height: fit-content;
 }
+.rbc-toolbar .rbc-toolbar-label {
+  font-size: 2vw;
+  font-weight: 900;
+}
+.rbc-day-bg + .rbc-day-bg {
+  background: rgb(1, 58, 107, 0.5);
+}
+.rbc-day-bg {
+  background: rgb(1, 58, 107, 0.5);
+}
+.rbc-today {
+  background: rgba(1, 31, 57, 0.8) !important;
+}
+.rbc-off-range-bg {
+  background: #e6e6e6 !important;
+}
+.rbc-btn-group > button:last-child:not(:first-child) {
+  background-color: #76adde;
+}
+.rbc-btn-group > button:not(:first-child):not(:last-child) {
+  background-color: #76adde;
+}
+.rbc-btn-group > button:first-child:not(:last-child) {
+  background-color: #76adde;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: rgb(1, 58, 107) !important;
+  color: white !important;
+}
+.rbc-btn-group > button:not(:first-child):not(:last-child) {
+  color: black;
+}
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  background-color: rgb(1, 58, 107) !important;
+  color: white !important;
+  text-align: center !important;
+}
+.rbc-btn-group > button:last-child:not(:first-child) {
+  color: black;
+}
 @media only screen and (max-width: 768px) {
   .Calendar {
     height: 90vh;
