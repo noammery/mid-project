@@ -3,7 +3,7 @@
   overflow: hidden;
   padding-top: 10vh;
   margin: 0 !important;
-  height: fit-content;
+  height: 105vh;
   float: left;
   width: 100%;
   margin-bottom: 16px;
@@ -81,6 +81,9 @@
   margin-top: 5vh;
 }
 @media only screen and (max-width: 768px) {
+  .Meet {
+    height: fit-content;
+  }
   .us {
     align-items: center;
     flex-direction: column;
