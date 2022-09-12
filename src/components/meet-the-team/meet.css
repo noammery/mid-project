@@ -29,6 +29,15 @@
   height: 10vw;
   width: 10vw;
 }
+.picturePhone {
+  object-fit: cover;
+  border: 2px solid black;
+  position: absolute;
+  border-radius: 50%;
+  height: 20vw;
+  width: 20vw;
+  visibility: hidden;
+}
 
 .us {
   padding-top: 13vh;
@@ -84,35 +93,26 @@
   .Meet {
     height: fit-content;
   }
-  .us {
-    align-items: center;
-    flex-direction: column;
+  .picture {
+    visibility: hidden;
   }
-  .me {
-    height: fit-content;
-    width: 90vw;
+  .picturePhone {
+    visibility: visible;
+  }
+  .us {
+    flex-direction: column;
+    align-items: center;
   }
   .me p {
-    height: 10vh;
     width: 80vw;
   }
-  .picture {
-    height: 25vw;
-    width: 25vw;
+  .me {
+    padding-top: 0;
+    height: fit-content;
+    width: 90vw;
+    margin-bottom: 2vh;
   }
-  .picture1 {
-    left: 33vw;
-    top: 12vh;
-  }
-  .picture2 {
-    left: 33vw;
-    top: 63vh;
-  }
-  .picture3 {
-    left: 33vw;
-    top: 114vh;
-  }
-  .meContainer {
-    margin-bottom: 10vh;
+  .me h4 {
+    padding-top: 10vh;
   }
 }
