@@ -1,6 +1,6 @@
 import Links from "./navbar components/Links";
 import Logo from "./navbar components/Logo";
-import Search from "./navbar components/Search";
+// import Search from "./navbar components/Search";
 import Hamburger from "./navbar components/Hamburger";
 import "./navbar.css";
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
   // grey / white / blue / red(default=blank)/deepPurple/maldives/coolGreen
   const logoPosition = "first";
   const linksPosition = "second";
-  const searchPosition = "third";
+  // const searchPosition = "third";
   const hamburgerPosition = "forth";
   // pick the position for each element : first/middle/last
   const navbarPosition = "top";
@@ -41,9 +41,9 @@ function Navbar() {
           ]}
         />
       </div>
-      <div className={`searchContainer ${searchPosition}`}>
+      {/* <div className={`searchContainer ${searchPosition}`}>
         <Search color={pageColor} />
-      </div>
+      </div> */}
       <div className={`hamburgercontainer ${hamburgerPosition}`}>
         <Hamburger
           navbarPosition={navbarPosition}
