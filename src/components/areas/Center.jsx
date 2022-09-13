@@ -70,22 +70,6 @@ const Center = () => {
             </div>
 
             <div className="centerBottom">
-                <form>
-                    <TextField
-                        id="search-bar"
-                        className="text"
-                        onChange={(e) => {
-                            setSearchTerm(e.target.value);
-                        }}
-                        label="Search"
-                        variant="outlined"
-                        size="small"
-                        
-                    />
-                    <IconButton type="submit" aria-label="search">
-                        <SearchIcon style={{ fill: "blue" }} />
-                    </IconButton>
-                </form>
                 <div className="accordion">
 
 
