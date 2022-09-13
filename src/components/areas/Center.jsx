@@ -3,7 +3,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Formik } from "formik";
 import "./center.css";
 import Box from "@mui/material/Box";
@@ -11,9 +11,7 @@ import Modal from "@mui/material/Modal";
 import { useDispatch } from "react-redux/es/exports";
 import { addEvent } from "../../store/calendarSlice";
 import RegisterModal from "../button-form-components/RegisterModal";
-import IconButton from "@mui/material/IconButton";
-import SearchIcon from '@mui/icons-material/Search';
-import TextField from "@mui/material/TextField";
+
 
 
 
