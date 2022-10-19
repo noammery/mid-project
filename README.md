@@ -3,7 +3,7 @@ https://non-volunteer.netlify.app/
 
 I've been working on a project that is a volunteer site. The team members are me and two other people. We worked together very well and the project was completed in time. I learned so much about React JS, design and teamwork.
 
-<p align="center"><img src="./portfolio_image.png" width="300" /></p>
+<p align="center"><img src="./Readme-Image.png" width="300" /></p>
 
 ## Technologies:
 
