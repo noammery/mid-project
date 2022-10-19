@@ -42,5 +42,5 @@ NonVolunteer was made as a part of a FullStack course in order to understand bet
 
 ## What's next:
 
-1. Authorization
-2. Sync with Google Calendar
+1. Authorization.
+2. Sync with Google Calendar.
